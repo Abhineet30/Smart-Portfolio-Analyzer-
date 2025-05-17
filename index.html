@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Portfolio Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Smart Portfolio Analyzer</h1>
+    <button id="theme-toggle">Switch Theme</button>
+  </header>
+
+  <section id="upload-section">
+    <h2>Upload Your Project or Artwork</h2>
+    <input type="file" id="file-input" accept="image/*" />
+    <textarea id="project-description" placeholder="Or enter project description here..."></textarea>
+    <button id="analyze-btn">Analyze</button>
+  </section>
+
+  <section id="feedback-section" hidden>
+    <h2>AI Feedback</h2>
+    <div id="feedback-output"></div>
+  </section>
+
+  <section id="projects-section">
+    <h2>Project Showcase</h2>
+    <div id="project-grid">
+      <!-- Projects will be displayed here -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
